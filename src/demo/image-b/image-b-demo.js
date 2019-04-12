@@ -19,7 +19,6 @@ class ImageBDemoComponent extends LitElement {
       </style>
       <div class="vertical-section-container">
         <h3>image b demo (scroll down)</h3>
-        <div class="spacer"></div>
         <demo-snippet>
           <template>
             <sn-inviewport selector="sn-image-b">
@@ -27,7 +26,18 @@ class ImageBDemoComponent extends LitElement {
                 intrinsicAspectRatio="1200:500"
                 placeholderStart="#ffffff"
                 placeholderEnd="#5E469E"
-                srcdata="http://via.placeholder.com/1200x500?text=1200x500"
+                srcdata="http://via.placeholder.com/1200x500?text=top-1200x500"
+              >
+              </sn-image-b>
+            </sn-inviewport>
+            <h3>keep scrolling</h3>
+            <div class="spacer"></div>
+            <sn-inviewport selector="sn-image-b">
+              <sn-image-b
+                intrinsicAspectRatio="1200:500"
+                placeholderStart="#ffffff"
+                placeholderEnd="#5E469E"
+                srcdata="http://via.placeholder.com/1200x500?text=bottom-1200x500"
               >
               </sn-image-b>
             </sn-inviewport>
