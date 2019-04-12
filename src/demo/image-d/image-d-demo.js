@@ -21,7 +21,6 @@ class ImageDDemoComponent extends LitElement {
       </style>
       <div class="vertical-section-container">
         <h3>Image d demo (scroll down)</h3>
-        <div class="spacer"></div>
         <demo-snippet>
           <template>
             <sn-inviewport selector="sn-image-d">
@@ -45,6 +44,34 @@ class ImageDDemoComponent extends LitElement {
                   />
                   <img
                     src="https://res.cloudinary.com/thisissoon/image/upload/c_fill,h_458,q_1,w_1200/v1545131390/Beaverbrooks/100YearsDiamondGuide/hero.jpg"
+                    alt="Some text"
+                  />
+                </picture>
+              </sn-image-d>
+            </sn-inviewport>
+            <h3>keep scrolling</h3>
+            <div class="spacer"></div>
+            <sn-inviewport selector="sn-image-d">
+              <sn-image-d
+                imgSm="https://res.cloudinary.com/thisissoon/image/upload/c_fill,h_375,q_auto,w_375/v1545131390/Beaverbrooks/100YearsDiamondGuide/hero_2.jpg"
+                imgMd="https://res.cloudinary.com/thisissoon/image/upload/c_fill,h_610,q_auto,w_720/v1545131390/Beaverbrooks/100YearsDiamondGuide/hero_2.jpg"
+                imgLg="https://res.cloudinary.com/thisissoon/image/upload/c_fill,h_458,q_auto,w_1200/v1545131390/Beaverbrooks/100YearsDiamondGuide/hero_.jpg"
+              >
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="https://res.cloudinary.com/thisissoon/image/upload/c_fill,h_458,q_1,w_1200/v1545131390/Beaverbrooks/100YearsDiamondGuide/hero_.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="https://res.cloudinary.com/thisissoon/image/upload/c_fill,h_610,q_1,w_720/v1545131390/Beaverbrooks/100YearsDiamondGuide/hero_2.jpg"
+                  />
+                  <source
+                    media="(min-width: 0)"
+                    srcset="https://res.cloudinary.com/thisissoon/image/upload/c_fill,h_375,q_1,w_375/v1545131390/Beaverbrooks/100YearsDiamondGuide/hero_2.jpg"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/thisissoon/image/upload/c_fill,h_458,q_1,w_1200/v1545131390/Beaverbrooks/100YearsDiamondGuide/hero_2.jpg"
                     alt="Some text"
                   />
                 </picture>
